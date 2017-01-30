@@ -6,12 +6,26 @@ body {
 }
 
 
+
+
 #pageWrap {
+
+	width: 800px;
+	margin: 0 auto 40px;
+	padding: 50px;
+
+background-color: white;
 
 }
 
 
-
+#Content{
+	float: left;
+	/*margin: 40px 0 0 0;*/
+	height: 164px;
+	width: 200px;
+	border-radius: 30px;
+}
 
 #QualififcationTitle {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
@@ -32,16 +46,14 @@ body {
 
 
 
-img {
+/*img {
     position: absolute;
 	top:10px;
 	left:40px;
-	height: 164px;
-	width: 200px;
-	border-radius: 30px;
+	
 	
 }
-
+*/
 
 
 .clear {clear: both;}
