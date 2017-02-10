@@ -1,18 +1,142 @@
-body {
+#nav li a {
+	color: #544738;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 12px;
+	position: inline;
+ 
+}
+ 
+#nav li a:hover {
+	color: #7eb9be;
+	transition: 0.4s;
+  color: yellow;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 5 10px;
 
-	background: url("http://randomstory.org/wp-content/uploads/2015/08/Tiny-girl-black-wallpaper.jpg");
+}
+
+
+
+#nav ul {
+	float:right;
+	margin-left: 1em;
+  list-style-type: none;
+
+}
 
 
 }
+.social {
+  position: fixed;
+  bottom: 10px;
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-10px, 0);
+}
+.social ul li {
+  display: inline-block;
+  margin: 0 25px 0 0;
+  background-color:white;
+  width: 120px;
+  text-align: left;
+  padding: 0 10px 0 0;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(30px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+
+body {
+
+background: linear-gradient(260deg, #04261d, #274a6b, #0b5826, #6c7f73);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+	
+    
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
 
 
 
 
 #pageWrap {
 
-	width: 800px;
+	width: 820px;
 	margin: 0 auto 40px;
-	padding: 50px;
+	padding: 30px;
 
 background-color: white;
 
@@ -46,14 +170,14 @@ background-color: white;
 
 
 
-/*img {
-    position: absolute;
-	top:10px;
-	left:40px;
-	
+ img {
+    
+    
+	top:15px;
+	left:150px;
 	
 }
-*/
+
 
 
 .clear {clear: both;}
@@ -83,12 +207,12 @@ p {
 	font-weight: 700;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	margin-bottom: -6px;
-	margin-left: 410px;
+	margin-left: 225px;
 }
 
 #name h2 {
 	font-size: 2em;
-	margin-left: 415px;
+	margin-left: 230px;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
@@ -113,34 +237,7 @@ p {
 	float: left;
 }
 
-#contactDetails {
-	float: right;
-}
 
-#contactDetails ul {
-	list-style-type: none;
-	font-size: 0.9em;
-	margin-top: 2px;
-}
-
-#contactDetails ul li {
-	margin-bottom: 3px;
-	color: #444;
-}
-
-#contactDetails ul li a, a[href^=tel] {
-	color: #444; 
-	text-decoration: none;
-	-webkit-transition: all .3s ease-in;
-	-moz-transition: all .3s ease-in;
-	-o-transition: all .3s ease-in;
-	-ms-transition: all .3s ease-in;
-	transition: all .3s ease-in;
-}
-
-#contactDetails ul li a:hover { 
-	color: #cf8a05;
-}
 
 
 section {
@@ -200,38 +297,28 @@ ul.keySkills li {
 	display: inline-block;
 }
 
-@media all and (min-width: 602px) and (max-width: 800px) {
-	#headshot {
-		display: none;
-	}
-	
-	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
-	}
-}
+@media all and (min-width: 402px) and (max-width: 800px) {
+	/*img {
+		display: block;
+	}*/
 
-@media all and (max-width: 601px) {
-	#cv {
-		width: 95%;
-		margin: 10px auto;
-		min-width: 280px;
+
 	}
+
+@media all and (max-width: 650px) {
 	
-	#headshot {
-		display: none;
-	}
 	
-	#name, #contactDetails {
+	
+	#name {
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
 	
-	.sectionTitle, .sectionContent {
+	.sectionTitle, .sectionContent, .Qualification, .social {
 		float: none;
-		width: 100%;
+		width: 20%;
+
 	}
 	
 	.sectionTitle {
@@ -244,6 +331,23 @@ ul.keySkills li {
 		-webkit-column-count:2;
 		column-count:2;
 	}
+
+	#pageWrap {
+
+	margin: 0 auto 40px;
+	padding: 10px;
+	float: left;
+	display: inline;
+}
+
+#pageWrap img {
+
+	display: inline;
+}
+
+
+
+
 }
 
 
